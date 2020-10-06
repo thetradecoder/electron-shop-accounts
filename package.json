@@ -1,0 +1,21 @@
+{
+  "name": "electron-shop-accounts",
+  "version": "1.0.0",
+  "description": "small shop accounting app built with electron and sqlite3",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/thetradecoder/electron-shop-accounts",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "thetradecoder"
+  ],
+  "author": "tradecoder",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^10.1.3"
+  }
+}
