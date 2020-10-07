@@ -1,6 +1,13 @@
 // Modules to control application life and create native browser window
-const {app, BrowserWindow} = require('electron')
-const path = require('path')
+const {app, BrowserWindow} = require('electron');
+const path = require('path');
+const sqlite3 = require('sqlite3').verbose();
+let db = new sqlite3.Database(':memory:', err=>{
+  if(err){
+    console.log(err)
+  }
+  console.log('in-memory database connected')
+})
 
 function createWindow () {
   // Create the browser window.
