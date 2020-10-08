@@ -10,11 +10,11 @@ body{
 }
 .form-control{
     width:100%;
-    padding:5px;
+    padding:10px;
 }
 .btn{
     min-width:30px; 
-    padding:5px;
+    padding:10px;
     font-size:18px;    
 }
 .btn-primary{
