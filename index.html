@@ -15,46 +15,42 @@
   <body>
     <h1 class="text-center">Electron Shop</h1>
 
-    <div>
-      <ul>
-        <li><a href="#add-product">Add Product</a></li>
-        <li><a href="#add-category">Create a new category</a></li>
-        <li><a href="#buy-product">Buy a product</a></li>
-        <li><a href="#sell-product">Sell a product</a></li>
-        <li><a href="#check-single-stock">Check a single product stock</a></li>
-      </ul>
-    </div>
-
-    <div class="container">
-      <div id="add-product">
-        <form>
-          <h2 class ="text-center">Add a new product</h2>
-          <input type="text" placeholder="product id" class="form-control"/>
-          <input type="text" placeholder="product name" class="form-control"/>
-          <input type="text" placeholder="product category" class="form-control"/>
-          <button type="submit" class="btn btn-primary">Add</button>
-        </form>
-      </div>
-      
-      <div id="add-category">
-        <form>
-          <h2 class ="text-center">Create a new category</h2>          
-          <input type="text" placeholder="category name" class="form-control"/>
-          <input type="text" placeholder="parent category" class="form-control"/>
-          <button type="submit" class="btn btn-primary">Add</button>
-        </form>
+    <div id="onpage-menu" class = "container">
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed card-link" data-toggle="collapse" href="#product-enlist">Enlist a product</a>
+        </div>
+        <div id="product-enlist" class="collapse">
+          <form>
+            <h2 class ="text-center">Add a new product</h2>
+            <input type="text" placeholder="product id" class="form-control"/>
+            <input type="text" placeholder="product name" class="form-control"/>
+            <input type="text" placeholder="product category" class="form-control"/>
+            <button type="submit" class="btn btn-primary">Add</button>
+          </form>
+        </div>
       </div>
 
-      <div id="buy-product">
-        <form>
-          <h2 class ="text-center">Buy a product</h2>          
-          <input type="text" placeholder="product name" class="form-control"/>
-          <input type="text" placeholder="category" class="form-control"/>
-          <input type="text" placeholder="price" class="form-control"/>
-          <button type="submit" class="btn btn-primary">Store this product</button>
-        </form>
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed card-link" data-toggle="collapse" href="#buy-product">Buy/store a product</a>
+        </div>
+        <div id="buy-product" class="collapse">
+          <form>
+            <h2 class ="text-center">Buy a product</h2>          
+            <input type="text" placeholder="product name" class="form-control"/>
+            <input type="text" placeholder="category" class="form-control"/>
+            <input type="text" placeholder="price" class="form-control"/>
+            <button type="submit" class="btn btn-primary">Store this product</button>         
+          </form>
+        </div>
+      </div>
 
-        <div id="sell-product">
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed card-link" data-toggle="collapse" href="#sell-product">Sell a product</a>
+        </div>
+        <div id="sell-product" class="collapse">
           <form>
             <h2 class ="text-center">Sell a product</h2>          
             <input type="text" placeholder="product name" class="form-control"/>
@@ -62,19 +58,39 @@
             <input type="text" placeholder="price" class="form-control"/>
             <button type="submit" class="btn btn-primary">Sell product</button>
           </form>
+        </div>
       </div>
 
-      <div id="check-single-stock">
-        <form>
-          <h2 class ="text-center">Check single product stock</h2>          
-          <input type="text" placeholder="product name" class="form-control"/>
-          <input type="text" placeholder="category" class="form-control"/>
-          <button type="submit" class="btn btn-primary">Check</button>
-        </form>
-    </div>
-    </div>
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed card-link" data-toggle="collapse" href="#check-single-stock">Check stock</a>
+        </div>
+        <div id="check-single-stock" class="collapse">
+          <form>
+            <h2 class ="text-center">Check single product stock</h2>          
+            <input type="text" placeholder="product name" class="form-control"/>
+            <input type="text" placeholder="category" class="form-control"/>
+            <button type="submit" class="btn btn-primary">Check</button>
+          </form>
+        </div>
+      </div>
 
-  
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed card-link" data-toggle="collapse" href="#add-category">Create a new category</a>
+        </div>
+        <div id="add-category" class="collapse">
+          <form>
+            <h2 class ="text-center">Create a new category</h2>          
+            <input type="text" placeholder="category name" class="form-control"/>
+            <input type="text" placeholder="parent category" class="form-control"/>
+            <button type="submit" class="btn btn-primary">Add</button>
+          </form>
+        </div>
+      </div>
+
+
+    </div>
 
     <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>
