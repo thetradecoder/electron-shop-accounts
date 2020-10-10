@@ -59,6 +59,6 @@ db.serialize(function() {
   stmt.finalize();
  
   db.each("SELECT rowid AS id, info FROM shop", function(err, row) {
-      console.log(row.id + ": ID # : " + row.info);
+      console.log("ID # "+ row.id + ": Data : " + row.info);
   });
 });
